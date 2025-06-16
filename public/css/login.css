@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #d3d3d3, #bdbdbd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.system-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 4px;
+    color: #888;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: -8px;
+    font-size: 12px;
+    color: #667eea;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #5a67d8;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-text a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+}
