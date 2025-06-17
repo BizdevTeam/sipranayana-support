@@ -59,7 +59,7 @@
                         
                         @if ($report->file_proof)
                             <div class="mb-2">
-                                <img src="{{ asset('storage/report_files/' . $report->file_proof) }}" alt="Bukti laporan" class="img-fluid rounded shadow" style="max-height: 200px;">
+                                <img src="{{ asset('images/report_files/' . $report->file_proof) }}" alt="Bukti laporan" class="img-fluid rounded shadow" style="max-height: 200px;">
                                 <p class="mt-1"><small class="text-muted">File saat ini: {{ $report->file }}</small></p>
                             </div>
                         @endif
